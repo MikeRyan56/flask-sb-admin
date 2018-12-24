@@ -10,6 +10,7 @@ def homepage():
 	return render_template(template)
 
 @mod.route("/about")
-def aboutindex():
+def about():
+    
     template = 'site/about.html'
     return render_template(template)
