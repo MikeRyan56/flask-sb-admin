@@ -1,4 +1,15 @@
 // Call the dataTables jQuery plugin
-$(document).ready(function() {
-  $('#dataTable').DataTable();
-});
+// $(document).ready(function() {
+//   $('#dataTable').DataTable();
+// });
+$(document).ready(function () {
+  var table = $('#dataTable').DataTable( { 
+    lengthChange: false,
+    paging: true,
+    searching: true,
+    buttons: ['copy', 'excel', 'csv', 'pdf', 'colvis']
+  } );
+  table.buttons().container()
+    .appendTo('#dataTable_wrapper .col-md-6:eq(0)');
+  } );
+

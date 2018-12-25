@@ -14,3 +14,9 @@ def about():
     
     template = 'site/about.html'
     return render_template(template)
+
+@mod.route("/404")
+def four_zero_four():
+    
+    template = '404.html'
+    return render_template(template)
